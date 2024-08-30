@@ -70,6 +70,16 @@ Feature: Ecommerce functionality verification
     When user is on the cart page change the quantity of the product
     Then verify the price is changed based on quantity
 
+    #9
+  Scenario: verify add to cart won't work without selecting size
+    Given user opens the website
+    Then user search for a product "search.product" in the search input field
+    When user is on the product listing page
+    Then click on a product
+    When add to cart button is clicked
+    Then verify product can't be added to cart without a size
+
+
 
 
 

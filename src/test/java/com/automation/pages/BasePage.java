@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -22,6 +23,7 @@ public class BasePage {
 
     WebDriver driver;
     WebDriverWait wait;
+
 
     public BasePage() {
         this.driver = DriverManager.getDriver();
@@ -35,7 +37,9 @@ public class BasePage {
     }
 
     public void waitForElementLocated(WebElement element) {
-        wait.until(ExpectedConditions.visibilityOf(element));
+        WebElement element1 = wait.until(ExpectedConditions.visibilityOf(element));
+        element1.click();
+
     }
 
     public void waitForElementToBeClickable(WebElement element) {
@@ -47,6 +51,8 @@ public class BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();", element);
     }
+
+
 
 
     //mobileautomation

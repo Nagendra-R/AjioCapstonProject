@@ -65,12 +65,41 @@ public class CartPageSteps {
     @When("user is on the cart page change the quantity of the product")
     public void userIsOnTheCartPageChangeTheQuantityOfTheProduct() {
 
-
+        cartPage.changeQuantityProcess();
     }
 
     @Then("verify the price is changed based on quantity")
     public void verifyThePriceIsChangedBasedOnQuantity() {
 
+        Assert.assertTrue(cartPage.verifyQuantityChange());
 
     }
+
+//----------------------------- product without a size ----------------------------------------
+
+    @When("add to cart button is clicked")
+    public void addToCartButtonIsClicked(){
+
+        cartPage.tabSwitch();
+        cartPage.addToCart();
+
+    }
+
+    @Then("verify product can't be added to cart without a size")
+    public void verifyProductCanTBeAddedToCartWithoutASize() {
+        Assert.assertEquals("Please select a size", cartPage.getTextFromCartPage());
+    }
+
+//-------------------------------------------------------------------------------------------
+
+    @Then("verify the item is added to bag")
+    public void verifyTheItemIsAddedToBag() {
+        org.testng.Assert.assertTrue(cartPage.verifyItemAddedToBag());
+    }
+
+    @Then("verify cart is empty")
+    public void verifyCartIsEmpty() {
+        org.testng.Assert.assertEquals("Cart not found",cartPage.getTextFromCartPage());
+    }
+
 }

@@ -1,12 +1,11 @@
 package com.automation.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,11 +13,13 @@ public class CartPage extends BasePage {
 
     @FindBy(xpath = "//div[@class='ic-cart ']")
     WebElement cartIconButton;
+
     List<String> windowHandles = new ArrayList<>(driver.getWindowHandles());
+
 
     String sizeXpath = "//div[@tabindex='0']/span[text()='%s']";
 
-    @FindBy(xpath = "//span[text()='ADD TO BAG']")
+    @FindBy(xpath = "//div[@role='button' and @class='btn-gold']")
     WebElement addToCartBtn;
 
     @FindBy(xpath = "//section[@id='orderTotal']/span[@class='price-value bold-font']")
@@ -34,11 +35,10 @@ public class CartPage extends BasePage {
     WebElement couponApplyBtn;
 
 
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-
     public void tabSwitch() {
         driver.switchTo().window(windowHandles.getLast());
     }
+
 
     @FindBy(xpath = "//button[text()='Proceed to shipping']")
     WebElement proceedToShippingButton;
@@ -49,6 +49,10 @@ public class CartPage extends BasePage {
 
     @FindBy(id = "error-tooltip")
     WebElement textInEmptyCartPage;
+
+    @FindBy(xpath = "//span[text()='GO TO BAG']")
+    WebElement goToCartBtn;
+
     public void addToCart() {
         addToCartBtn.click();
     }
@@ -58,7 +62,8 @@ public class CartPage extends BasePage {
         return proceedToShippingButton.isDisplayed();
     }
     public void goToCart() {
-        WebElement goToCartBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='GO TO BAG']")));
+        waitForElementToBeClickable(goToCartBtn);
+//        WebElement goToCartBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='GO TO BAG']")));
         goToCartBtn.click();
     }
 
@@ -128,5 +133,34 @@ public class CartPage extends BasePage {
 
     @FindBy(id = "updateQuantity")
     WebElement quantityUpdateBtn;
+
+    @FindBy(className = "counter")
+    WebElement quantityValue;
+
+    @FindBy(xpath = "//span[@aria-label='items']")
+    WebElement myBagsItemsQuantity;
+
+    private String updatedText;
+    public void changeQuantityProcess(){
+        quantityChangeBtn.click();
+        incrementBtn.click();
+        updatedText = quantityValue.getText();
+        quantityUpdateBtn.click();
+    }
+
+    public String updatedTextReturn(){
+        return updatedText;
+    }
+
+    public boolean verifyQuantityChange(){
+        String myBagsQuantityStr = myBagsItemsQuantity.getText();
+        System.out.println("Value inside parantheses : " + myBagsQuantityStr);
+        System.out.println("after quantity incremented value:"+updatedText);
+        return myBagsQuantityStr.contains(updatedTextReturn());
+    }
+
+    public void scrollToElement(){
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", addToCartBtn);
+    }
 
 }

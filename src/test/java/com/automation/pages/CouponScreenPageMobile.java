@@ -15,6 +15,7 @@ public class CouponScreenPageMobile extends BasePage{
     public boolean verifyUserOnCouponScreen() {
             return isPresent(applicableText);
     }
+
     public void clickOnFirstApplyCoupon() {
         clickOnElementIfPresent(applyCouponButton);
     }

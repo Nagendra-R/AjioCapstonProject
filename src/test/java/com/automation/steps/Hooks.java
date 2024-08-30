@@ -19,7 +19,7 @@ public class Hooks {
 
     @After
     public void close() {
-        DriverManager.getDriver().quit();
+//        DriverManager.getDriver().quit();
     }
 
 }
