@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class CheckOutPageMobile extends BasePage{
+public class CheckOutPageMobile extends BasePageMobile {
 
     @FindBy(xpath = "//android.widget.TextView[@text='Add To Bag']")
     WebElement addToBagButton;

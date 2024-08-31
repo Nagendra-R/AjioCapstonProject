@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import java.util.List;
 
 
-public class HomePageMobile extends BasePage{
+public class HomePageMobile extends BasePageMobile {
 
     @FindBy(xpath = "//android.widget.Button[@text='Allow']")
     WebElement allowBut;

@@ -5,7 +5,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPageMobile extends BasePage{
+public class LoginPageMobile extends BasePageMobile {
 
     @FindBy(xpath = "//android.widget.TextView[@text='Login or Signup']")
     WebElement loginOrSignUpText;

@@ -1,6 +1,7 @@
 package com.automation.steps;
 
 import com.automation.pages.HomePage;
+import com.automation.utils.ConfigReader;
 import com.automation.utils.ReportManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -20,7 +21,6 @@ public class HomeStep {
     public void validate_user_on_home_page() {
         Assert.assertEquals("https://www.ajio.com/", homePage.verifyUserOnHomePage());
     }
-
 
     @When("user click on the signInButton")
     public void userClickOnTheSignInButton() {
@@ -87,6 +87,37 @@ public class HomeStep {
     public void verifyMouseHoverIsWorkingOrNot() {
         Assert.assertTrue(homePage.validateTheMouseHoverIsWorking());
     }
+
+//---------------------GOING TO THE TOP FUNCTION --------------------------------------------
+    @Given("user opens the website")
+    public void user_opens_the_website() {
+
+        homePage.openWebsite();
+
+    }
+    @Given("user navigates to the bottom of the page")
+    public void user_navigates_to_the_bottom_of_the_page() {
+
+        homePage.gotoBottomSection();
+
+    }
+    @When("user clicks on the goto top arrow button")
+    public void user_clicks_on_the_goto_top_arrow_button() {
+        homePage.clicksOnButton();
+
+    }
+    @Then("user must reach the top of the page")
+    public void user_must_reach_the_top_of_the_page() {
+        Assert.assertTrue(homePage.verifyTopSectionDisplayed());
+    }
+//--------------------------------- coupon verification -------------------------------------
+
+    @Then("user search for a product {string} in the search input field")
+    public void userSearchForAProductInTheSearchInputField(String product) {
+        homePage.productSearchProcess(ConfigReader.getConfigValue(product));
+    }
+//--------------------------------------------------------------------------------------------
+
 
 
 

@@ -3,7 +3,7 @@ package com.automation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class CouponScreenPageMobile extends BasePage{
+public class CouponScreenPageMobile extends BasePageMobile {
 
     @FindBy(xpath = "//android.widget.TextView[@text='Apply coupon']")
     WebElement applicableText;

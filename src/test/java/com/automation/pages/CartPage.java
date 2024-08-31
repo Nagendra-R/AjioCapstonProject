@@ -1,7 +1,6 @@
 package com.automation.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartPage extends BasePage {
+public class CartPage extends BasePageWeb {
 
     @FindBy(xpath = "//div[@class='ic-cart ']")
     WebElement cartIconButton;
@@ -19,8 +18,7 @@ public class CartPage extends BasePage {
 
     String sizeXpath = "//div[@tabindex='0']/span[text()='%s']";
 
-    @FindBy(xpath = "//div[@role='button' and @class='btn-gold']")
-    WebElement addToCartBtn;
+
 
     @FindBy(xpath = "//section[@id='orderTotal']/span[@class='price-value bold-font']")
     WebElement totalPrice;
@@ -50,22 +48,15 @@ public class CartPage extends BasePage {
     @FindBy(id = "error-tooltip")
     WebElement textInEmptyCartPage;
 
-    @FindBy(xpath = "//span[text()='GO TO BAG']")
-    WebElement goToCartBtn;
 
-    public void addToCart() {
-        addToCartBtn.click();
-    }
+
+
 
     public boolean verifyItemAddedToBag() {
         clickElementByJS(cartIconButton);
         return proceedToShippingButton.isDisplayed();
     }
-    public void goToCart() {
-        waitForElementToBeClickable(goToCartBtn);
-//        WebElement goToCartBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='GO TO BAG']")));
-        goToCartBtn.click();
-    }
+
 
     public void couponSelection() {
         couponSelect.click();
@@ -123,7 +114,7 @@ public class CartPage extends BasePage {
     }
 
 
-//------------------ quantity changing --------------------------------------------------
+//------------------------------quantity changing --------------------------------------------------
 
     @FindBy(xpath = "//div[@class='cartqty']")
     WebElement quantityChangeBtn;
@@ -159,8 +150,8 @@ public class CartPage extends BasePage {
         return myBagsQuantityStr.contains(updatedTextReturn());
     }
 
-    public void scrollToElement(){
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", addToCartBtn);
-    }
+//    public void scrollToElement(){
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", addToCartBtn);
+//    }
 
 }

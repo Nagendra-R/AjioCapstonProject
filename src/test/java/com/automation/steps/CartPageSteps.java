@@ -19,18 +19,7 @@ public class CartPageSteps {
         cartPage.sizeSelection(ConfigReader.getConfigValue("product.size"));
 
     }
-    @Then("add the product to the cart")
-    public void add_the_product_to_the_cart() {
 
-        cartPage.addToCart();
-
-    }
-    @Then("go to the cart page")
-    public void go_to_the_cart_page() {
-
-        cartPage.goToCart();
-
-    }
     @When("user is on the cart page select a coupon and click apply")
     public void user_is_on_the_cart_page_select_a_coupon_and_click_apply() {
 
@@ -77,13 +66,7 @@ public class CartPageSteps {
 
 //----------------------------- product without a size ----------------------------------------
 
-    @When("add to cart button is clicked")
-    public void addToCartButtonIsClicked(){
 
-        cartPage.tabSwitch();
-        cartPage.addToCart();
-
-    }
 
     @Then("verify product can't be added to cart without a size")
     public void verifyProductCanTBeAddedToCartWithoutASize() {

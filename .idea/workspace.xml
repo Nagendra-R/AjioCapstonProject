@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61b4b76a-6d81-4961-9864-889a718e83e8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/BasePageWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/CheckOutPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/CheckOutPageMobile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/CouponScreenPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/CouponScreenPageMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/CustomerCare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/CustomerCare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/GridViewPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/HomePageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/HomePageMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/ItemProductPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/ItemsListPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/ItemsListPageMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/LoginPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/LoginPageMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/PaymentPageMobile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/PaymentPageMobile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/pages/ProductListingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/CartPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/steps/CartPageSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/CartStep.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/steps/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/GridViewSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/HomePageSteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/HomeStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/steps/HomeStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/ItemProductStep.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/steps/ProductPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/steps/ProductListingSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/280680/Desktop/AjioAutomation/Ajio/src/test/resources",
+    "last_opened_file_path": "C:/Users/280680/Downloads/EaseMyTripAutomationFramework-development/EaseMyTripAutomationFramework-development",
     "onboarding.tips.debug.path": "C:/Users/280680/Desktop/AjioAutomation/Ajio/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -82,7 +92,7 @@
       <recent name="com.automation.runner" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: verify add to cart won't work without selecting size">
+  <component name="RunManager" selected="Cucumber Java.Scenario: verify the grid button is working properly">
     <configuration name="Scenario: verify add to cart won't work without selecting size" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" />
@@ -92,46 +102,6 @@
       <option name="NAME_FILTER" value="^verify add to cart won\'t work without selecting size$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify add to cart won\'t work without selecting size$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: verify add to cart won't work without selecting size" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: verify coupons are working" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" />
-      <option name="GLUE" value="com.automation.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Ajio" />
-      <option name="NAME_FILTER" value="^verify coupons are working$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify coupons are working$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: verify coupons are working" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: verify every product is of the same brand" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" />
-      <option name="GLUE" value="com.automation.steps" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Ajio" />
-      <option name="NAME_FILTER" value="^verify every product is of the same brand$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify every product is of the same brand$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: verify every product is of the same brand" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -183,13 +153,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: verify the grid button is working properly" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" />
+      <option name="GLUE" value="com.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Ajio" />
+      <option name="NAME_FILTER" value="^verify the grid button is working properly$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify the grid button is working properly$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: verify the grid button is working properly" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: verify total number of products equals the number along category" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Homepage.feature" />
+      <option name="GLUE" value="com.automation.steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Ajio" />
+      <option name="NAME_FILTER" value="^verify total number of products equals the number along category$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^verify total number of products equals the number along category$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: verify total number of products equals the number along category" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: verify the grid button is working properly" />
+        <item itemvalue="Cucumber Java.Scenario: verify total number of products equals the number along category" />
+        <item itemvalue="Cucumber Java.Scenario: verify the delete button inside cart is working" />
         <item itemvalue="Cucumber Java.Scenario: verify add to cart won't work without selecting size" />
         <item itemvalue="Cucumber Java.Scenario: verify quantity in the cart is updating" />
-        <item itemvalue="Cucumber Java.Scenario: verify the delete button inside cart is working" />
-        <item itemvalue="Cucumber Java.Scenario: verify coupons are working" />
-        <item itemvalue="Cucumber Java.Scenario: verify every product is of the same brand" />
       </list>
     </recent_temporary>
   </component>

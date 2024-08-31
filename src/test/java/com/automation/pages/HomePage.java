@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 
-public class HomePage extends BasePage {
+public class HomePage extends BasePageWeb {
 
-    //------------- Goto Top Arrow Button --------------------------
+    //------------- Goto Top Arrow Button ----------------------------
     @FindBy(xpath = "//strong[contains(text(), 'Follow us')]")
     WebElement followUsText;
 

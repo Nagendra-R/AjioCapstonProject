@@ -3,7 +3,7 @@ package com.automation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class PaymentPageMobile extends BasePage{
+public class PaymentPageMobile extends BasePageMobile {
 
     @FindBy(xpath = "//android.widget.TextView[@text='Proceed to Payment']")
     WebElement paymentProceedButton;

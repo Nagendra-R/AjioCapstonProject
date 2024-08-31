@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class CustomerCare extends BasePage{
+public class CustomerCare extends BasePageWeb {
 
     //---------------- Customer care verification -------------------------
 

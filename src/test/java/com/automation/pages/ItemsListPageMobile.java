@@ -3,7 +3,7 @@ package com.automation.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class ItemsListPageMobile extends BasePage{
+public class ItemsListPageMobile extends BasePageMobile {
 
     @FindBy(xpath = "//android.widget.TextView[@text='Shirts']")
     WebElement itemTextDisplayed;
